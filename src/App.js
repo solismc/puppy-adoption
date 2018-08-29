@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const DATA_URL = 'http://api.petfinder.com/pet.find?key=c1245f06b6af83f0049cbea229ca8844&location=33716&format=json'
+
 class App extends Component {
   render() {
     return (
