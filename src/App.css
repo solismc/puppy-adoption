@@ -7,6 +7,35 @@ nav ul {
   flex-direction: row-reverse;
   justify-content: space-around;
   list-style: none;
+  font-size: 26px;
+  color: #182932;
+  background-color: #a67762;
+  padding: 1em;
 }
 
+.pets-header {
+  font-size: 48px;
+  background-color: #367d56;
+  color: #182932;
+  padding: 2em;
+}
 
+.pet-list {
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  border-color: #a67762;
+  align-items: center;
+  width: 40%;
+  border: dashed;
+  border-radius: 20px;
+  padding: 1em;
+  margin: 1em;
+}
+
+.all-pets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #dfef89;
+}

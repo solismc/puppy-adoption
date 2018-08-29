@@ -7,9 +7,8 @@ class App extends Component {
     super(props);
     this.state = {
       pets: []
-    }
+    };
   }
-  
 
   componentDidMount() {
     this.setState({
@@ -21,24 +20,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>Pets for Adoption</header>
-        {/*  */}
-        <nav>
+          <header className="pets-header">Pupps Looking for a Home</header>
+        <nav className="nav-ul">
           <ul>
             <li>View all pets</li>
             <li>Potential adoptees</li>
           </ul>
         </nav>
-        {/*  */}
+        <section className="all-pets">
         {this.state.pets.map((pet, i) => {
           return (
             <section className="pet-list" key={i}>
               <header>{pet.name.$t}</header>
-              <img src={pet.media.photos.photo[3].$t} />
-              <button>Save for Later! arf!</button>
+              <img src={pet.media.photos.photo[3].$t} height="300" width="300"/>
+              <button className="buttons">Save for Later! arf!</button>
             </section>
           );
         })}
+        </section>
       </div>
     );
   }
