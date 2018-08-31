@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import petData from "./Data/pet.json";
+import Pet from "./Component/Pet";
+import PetList from "./Component/PetList";
 
 class App extends Component {
   constructor(props) {
@@ -27,17 +29,8 @@ class App extends Component {
             <li>Potential adoptees</li>
           </ul>
         </nav>
-        <section className="all-pets">
-        {this.state.pets.map((pet, i) => {
-          return (
-            <section className="pet-list" key={i}>
-              <header>{pet.name.$t}</header>
-              <img src={pet.media.photos.photo[3].$t} height="300" width="300"/>
-              <button className="buttons">Save for Later! arf!</button>
-            </section>
-          );
-        })}
-        </section>
+        <PetList pets={this.state.pets}/>
+
       </div>
     );
   }
