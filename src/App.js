@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <header className="pets-header">Pupps Looking for a Home</header>
+          <header className="pets-header">Pups Looking for a Home</header>
         <nav className="nav-ul">
           <ul>
             <li>View all pets</li>

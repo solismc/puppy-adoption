@@ -33,9 +33,17 @@ nav ul {
   margin: 1em;
 }
 
+.pet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+}
 .all-pets {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   background-color: #dfef89;
 }
