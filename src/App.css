@@ -20,6 +20,14 @@ nav ul {
   padding: 2em;
 }
 
+.images-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  
+}
 .pet-list {
   display: flex;
   flex-direction: column;
@@ -39,8 +47,22 @@ nav ul {
   align-items: center;
   padding-top: 2em;
   padding-bottom: 2em;
-
+  font-size: larger;
 }
+
+.img {
+  height: 350px;
+  width: 350px;
+}
+
+.save-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height:5vh;
+  width: 10vw;
+  background-color: #367d56;
+}
+
 .all-pets {
   display: flex;
   justify-content: space-between;

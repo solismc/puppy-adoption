@@ -43,8 +43,8 @@ class Pet extends Component {
     return (
       <section className="pet">
         <header>{this.props.pet.name.$t}</header>
-        <img src={this.props.pet.media.photos.photo[3].$t} />
-        <button onClick={this.favoriteButtonClickEventHandler}>
+        <img class="img" src={this.props.pet.media.photos.photo[3].$t} />
+        <button class="save-button" onClick={this.favoriteButtonClickEventHandler}>
           Save for Later! arf!
         </button>
         <FavoriteButton isFavorited={this.state.isFavorited} />
