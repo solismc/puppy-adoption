@@ -29,7 +29,7 @@ class App extends Component {
             <li>Potential adoptees</li>
           </ul>
         </nav>
-        <section class="images-container">
+        <section className="images-container">
         <PetList pets={this.state.pets}/>
         </section>
 
