@@ -42,7 +42,7 @@ nav ul {
 }
 
 .pet {
-  display: flex;
+  display: flex!important;
   flex-direction: column;
   align-items: center;
   padding-top: 2em;
